@@ -60,7 +60,7 @@ namespace MonsterMVC.Domain.DomainModel
         [JsonProperty("languages")]
         public string Languages { get; set; }
         [JsonProperty("challenge_rating")]
-        public int ChallengeRating { get; set; }
+        public float ChallengeRating { get; set; }
         [JsonProperty("special_abilities")]
         public List<SpecialAbility> SpecialAbilities { get; set; }
         [JsonProperty("actions")]
