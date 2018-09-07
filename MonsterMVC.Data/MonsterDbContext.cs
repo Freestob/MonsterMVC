@@ -9,12 +9,12 @@ using MonsterMVC.Domain.Data;
 
 namespace MonsterMVC.Data
 {
-    class MonsterDbContext : DbContext
+    public class MonsterDbContext : DbContext
     {
         public MonsterDbContext() : base("MonsterDataBase")
         {
             //Drop the database and recreate on each run
-            //Database.SetInitializer(new DropCreateDatabaseAlways<MonsterDbContext>());
+            Database.SetInitializer(new DropCreateDatabaseAlways<MonsterDbContext>());
             // Create the DB if it doesn't exist.  
             Database.SetInitializer(new CreateDatabaseIfNotExists<MonsterDbContext>());
             //Will Drop and recreate if model changes.

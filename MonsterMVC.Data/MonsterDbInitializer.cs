@@ -19,6 +19,13 @@ namespace MonsterMVC.Data
                 ChallengeRating = 10,
                 UrlId = 1
             });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 2,
+                Name = "Acolyte",
+                ChallengeRating = .25f,
+                UrlId = 2
+            });
             context.SaveChanges();
 
             base.Seed(context);
