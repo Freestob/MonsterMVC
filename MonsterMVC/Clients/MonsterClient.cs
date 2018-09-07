@@ -19,13 +19,14 @@ namespace MonsterMVC.Clients
         }
         public async Task<Monster> GetMonster(int id)
         {
-            var request = new RestRequest("api/monsters/", Method.GET);
-            request.Parameters.Add(new Parameter()
-            {
-                Name = "id",
-                Type = ParameterType.QueryString,
-                Value = id
-            });
+            var request = new RestRequest("/monsters/{id}", Method.GET);
+            request.AddUrlSegment("id", id);
+            //request.Parameters.Add(new Parameter()
+            //{
+            //    Name = "id",
+            //    Type = ParameterType.QueryString,
+            //    Value = id
+            //});
             var response = await _client.ExecuteTaskAsync(request);
             return JsonConvert.DeserializeObject<Monster>(response.Content);
         }

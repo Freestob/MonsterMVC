@@ -26,8 +26,6 @@ namespace MonsterMVC.Models
         {
         }
 
-        public DbSet<Monster> Monsters { get; set; }
-
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();

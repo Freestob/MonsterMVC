@@ -11,7 +11,7 @@ namespace MonsterMVC.Controllers
 {
     public class MonsterController : Controller
     {
-        private readonly MonsterClient _monsterClient;
+        private readonly MonsterClient _monsterClient = new MonsterClient();
 
         // GET: Monster
         public ActionResult Index()
