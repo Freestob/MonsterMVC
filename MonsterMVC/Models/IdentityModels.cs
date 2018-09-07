@@ -3,6 +3,7 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using MonsterMVC.Domain.DomainModel;
 
 namespace MonsterMVC.Models
 {
@@ -24,6 +25,8 @@ namespace MonsterMVC.Models
             : base("DefaultConnection", throwIfV1Schema: false)
         {
         }
+
+        public DbSet<Monster> Monsters { get; set; }
 
         public static ApplicationDbContext Create()
         {

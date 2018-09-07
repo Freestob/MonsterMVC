@@ -1,0 +1,234 @@
+﻿@model MonsterMVC.Domain.DomainModel.Monster
+
+@{
+    ViewBag.Title = "GetMonster";
+}
+
+<h2>GetMonster</h2>
+
+<div>
+    <h4>Monster</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model._Id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model._Id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Index)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Index)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Size)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Size)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Type)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Type)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Subtype)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Subtype)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Alignment)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Alignment)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ArmorClass)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ArmorClass)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HitPoints)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HitPoints)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.hHitdice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.hHitdice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Speed)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Speed)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Strength)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Strength)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Dexterity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dexterity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Constitution)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Constitution)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Intelligence)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Intelligence)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Wisdom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Wisdom)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Charisma)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Charisma)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Perception)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Perception)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.stealth)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.stealth)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DamageVulnerabilities)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DamageVulnerabilities)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DamageResistances)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DamageResistances)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DamageImmunities)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DamageImmunities)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ConditionImmunities)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ConditionImmunities)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Senses)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Senses)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Languages)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Languages)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChallengeRating)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChallengeRating)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Url)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Url)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
