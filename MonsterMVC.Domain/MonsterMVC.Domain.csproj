@@ -45,6 +45,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data\Abstract\MonsterInterface.cs" />
+    <Compile Include="Data\ActiveMonster.cs" />
+    <Compile Include="Data\Encounter.cs" />
     <Compile Include="Data\MonsterDataModel.cs" />
     <Compile Include="DomainModel\Action.cs" />
     <Compile Include="DomainModel\Monster.cs" />

@@ -23,13 +23,18 @@ namespace MonsterMVC.Data
             Database.SetInitializer(new MonsterDbInitializer());
         }
 
+        public DbSet<Encounter> Encounters { get; set; }
+        public DbSet<ActiveMonster> ActiveMonsters { get; set; }
         public DbSet<MonsterDataModel> Monsters {get; set;}
+        
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+            modelBuilder.Configurations.Add(new EncounterMap());
+            modelBuilder.Configurations.Add(new ActiveMonsterMap());
             modelBuilder.Configurations.Add(new MonsterMap());
+           
             base.OnModelCreating(modelBuilder);
-
         }
     }
 }
