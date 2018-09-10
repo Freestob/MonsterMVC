@@ -2252,6 +2252,76 @@ namespace MonsterMVC.Data
                 ChallengeRating = 3,
                 UrlId = 309
             });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 310,
+                Name = "Wolf",
+                ChallengeRating = 0.25f,
+                UrlId = 310
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 311,
+                Name = "Worg",
+                ChallengeRating = 0.5f,
+                UrlId = 311
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 312,
+                Name = "Wraith",
+                ChallengeRating = 5,
+                UrlId = 312
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 313,
+                Name = "Wyvern",
+                ChallengeRating = 6,
+                UrlId = 313
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 314,
+                Name = "Xorn",
+                ChallengeRating = 5,
+                UrlId = 314
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 315,
+                Name = "Young Black Dragon",
+                ChallengeRating = 7,
+                UrlId = 315
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 316,
+                Name = "Young Blue Dragon",
+                ChallengeRating = 9,
+                UrlId = 316
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 317,
+                Name = "Young Brass Dragon",
+                ChallengeRating = 6,
+                UrlId = 317
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 318,
+                Name = "Young Bronze Dragon",
+                ChallengeRating = 8,
+                UrlId = 318
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 319,
+                Name = "Young Copper Dragon",
+                ChallengeRating = 7,
+                UrlId = 319
+            });
             context.SaveChanges();
 
             base.Seed(context);
