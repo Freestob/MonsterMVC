@@ -18,7 +18,7 @@ namespace MonsterMVC.Data
             // Create the DB if it doesn't exist.  
             Database.SetInitializer(new CreateDatabaseIfNotExists<MonsterDbContext>());
             //Will Drop and recreate if model changes.
-            //Database.SetInitializer(new DropCreateDatabaseIfModelChanges<MonsterDbContext>());
+            Database.SetInitializer(new DropCreateDatabaseIfModelChanges<MonsterDbContext>());
             //Custom Initializer
             Database.SetInitializer(new MonsterDbInitializer());
         }
