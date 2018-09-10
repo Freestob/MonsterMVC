@@ -33,7 +33,8 @@ namespace MonsterMVC.Controllers
             {
                 return HttpNotFound();
             }
-            return View(monsterDataModel);
+
+            return RedirectToAction("GetMonster", "Monster", new{id = monsterDataModel.UrlId});
         }
 
         // GET: MonsterDataModels/Create
