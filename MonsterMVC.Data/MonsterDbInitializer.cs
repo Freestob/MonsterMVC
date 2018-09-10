@@ -1972,6 +1972,76 @@ namespace MonsterMVC.Data
                 ChallengeRating = 10,
                 UrlId = 269
             });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 270,
+                Name = "Storm Giant",
+                ChallengeRating = 13,
+                UrlId = 270
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 271,
+                Name = "Succubus/Incubus",
+                ChallengeRating = 4,
+                UrlId = 271
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 272,
+                Name = "Swarm of Bats",
+                ChallengeRating = 0.25f,
+                UrlId = 272
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 273,
+                Name = "Swarm of Beetles",
+                ChallengeRating = 0.5f,
+                UrlId = 273
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 274,
+                Name = "Swarm of Centipedes",
+                ChallengeRating = 0.5f,
+                UrlId = 274
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 275,
+                Name = "Swarm of Insects",
+                ChallengeRating = 0.5f,
+                UrlId = 275
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 276,
+                Name = "Swarm of Poisonous Snakes",
+                ChallengeRating = 2,
+                UrlId = 276
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 277,
+                Name = "Swarm of Quippers",
+                ChallengeRating = 1,
+                UrlId = 277
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 278,
+                Name = "Swarm of Rats",
+                ChallengeRating = 0.25f,
+                UrlId = 278
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 279,
+                Name = "Swarm of Ravens",
+                ChallengeRating = 0.25f,
+                UrlId = 279
+            });
             context.SaveChanges();
 
             base.Seed(context);
