@@ -992,6 +992,146 @@ namespace MonsterMVC.Data
                 ChallengeRating = 1,
                 UrlId = 139
             });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 130,
+                Name = "Giant Lizard",
+                ChallengeRating = 0.25f,
+                UrlId = 130
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 131,
+                Name = "Giant Octopus",
+                ChallengeRating = 1,
+                UrlId = 131
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 132,
+                Name = "Giant Owl",
+                ChallengeRating = 0.25f,
+                UrlId = 132
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 133,
+                Name = "Giant Poisonous Snake",
+                ChallengeRating = 0.25f,
+                UrlId = 133
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 134,
+                Name = "Giant Rat",
+                ChallengeRating = 0.125f,
+                UrlId = 134
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 135,
+                Name = "Giant Rat (Diseased)",
+                ChallengeRating = 0.125f,
+                UrlId = 135
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 136,
+                Name = "Giant Scorpion",
+                ChallengeRating = 3,
+                UrlId = 136
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 137,
+                Name = "Giant Sea Horse",
+                ChallengeRating = 0.5f,
+                UrlId = 137
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 138,
+                Name = "Giant Shark",
+                ChallengeRating = 5,
+                UrlId = 138
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 139,
+                Name = "Giant Spider",
+                ChallengeRating = 1,
+                UrlId = 139
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 140,
+                Name = "Giant Toad",
+                ChallengeRating = 1,
+                UrlId = 140
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 141,
+                Name = "Giant Vulture",
+                ChallengeRating = 1,
+                UrlId = 141
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 142,
+                Name = "Giant Wasp",
+                ChallengeRating = 0.5f,
+                UrlId = 142
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 143,
+                Name = "Giant Weasel",
+                ChallengeRating = 0.125f,
+                UrlId = 143
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 144,
+                Name = "Giant Wolf Spider",
+                ChallengeRating = 0.25f,
+                UrlId = 144
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 145,
+                Name = "Gibbering Mouther",
+                ChallengeRating = 2,
+                UrlId = 145
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 146,
+                Name = "Glabrezu",
+                ChallengeRating = 9,
+                UrlId = 146
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 147,
+                Name = "Gladiator",
+                ChallengeRating = 5,
+                UrlId = 147
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 148,
+                Name = "Gnoll",
+                ChallengeRating = 0.5f,
+                UrlId = 148
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 149,
+                Name = "Goat",
+                ChallengeRating = 0,
+                UrlId = 149
+            });
             context.SaveChanges();
 
             base.Seed(context);
