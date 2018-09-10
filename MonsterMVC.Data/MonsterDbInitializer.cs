@@ -1832,8 +1832,78 @@ namespace MonsterMVC.Data
                 ChallengeRating = 0.5f,
                 UrlId = 249
             });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 250,
+                Name = "Scorpion",
+                ChallengeRating = 0,
+                UrlId = 250
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 251,
+                Name = "Scout",
+                ChallengeRating = 0.5f,
+                UrlId = 251
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 252,
+                Name = "Sea Hag",
+                ChallengeRating = 2,
+                UrlId = 252
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 253,
+                Name = "Sea Horse",
+                ChallengeRating = 0,
+                UrlId = 253
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 254,
+                Name = "Shadow",
+                ChallengeRating = 0.5f,
+                UrlId = 254
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 255,
+                Name = "Shambling Mound",
+                ChallengeRating = 5,
+                UrlId = 255
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 256,
+                Name = "Shield Guardian",
+                ChallengeRating = 7,
+                UrlId = 256
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 257,
+                Name = "Shrieker",
+                ChallengeRating = 0,
+                UrlId = 257
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 258,
+                Name = "Silver Dragon Wyrmling",
+                ChallengeRating = 2,
+                UrlId = 258
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 259,
+                Name = "Skeleton",
+                ChallengeRating = 0.25f,
+                UrlId = 249
+            });
             context.SaveChanges();
-       
+
             base.Seed(context);
         }
 
