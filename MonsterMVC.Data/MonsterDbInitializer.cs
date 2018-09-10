@@ -2042,6 +2042,76 @@ namespace MonsterMVC.Data
                 ChallengeRating = 0.25f,
                 UrlId = 279
             });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 280,
+                Name = "Swarm of Spiders",
+                ChallengeRating = 0.5f,
+                UrlId = 280
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 281,
+                Name = "Swarm of Wasps",
+                ChallengeRating = 0.5f,
+                UrlId = 281
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 282,
+                Name = "Tarrasque",
+                ChallengeRating = 30,
+                UrlId = 282
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 283,
+                Name = "Thug",
+                ChallengeRating = 0.5f,
+                UrlId = 283
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 284,
+                Name = "Tiger",
+                ChallengeRating = 1,
+                UrlId = 284
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 285,
+                Name = "Treant",
+                ChallengeRating = 9,
+                UrlId = 285
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 286,
+                Name = "Tribal Warrior",
+                ChallengeRating = 0.125f,
+                UrlId = 286
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 287,
+                Name = "Triceratops",
+                ChallengeRating = 5,
+                UrlId = 287
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 288,
+                Name = "Troll",
+                ChallengeRating = 5,
+                UrlId = 288
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 289,
+                Name = "Tyrannosaurus Rex",
+                ChallengeRating = 8,
+                UrlId = 289
+            });
             context.SaveChanges();
 
             base.Seed(context);
