@@ -198,6 +198,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Clients\MonsterClient.cs" />
+    <Compile Include="Controllers\ActiveMonstersController.cs" />
     <Compile Include="Controllers\EncountersController.cs" />
     <Compile Include="Controllers\MonsterController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
@@ -288,6 +289,11 @@
     <Content Include="Views\Encounters\Details.cshtml" />
     <Content Include="Views\Encounters\Edit.cshtml" />
     <Content Include="Views\Encounters\Index.cshtml" />
+    <Content Include="Views\ActiveMonsters\Create.cshtml" />
+    <Content Include="Views\ActiveMonsters\Delete.cshtml" />
+    <Content Include="Views\ActiveMonsters\Details.cshtml" />
+    <Content Include="Views\ActiveMonsters\Edit.cshtml" />
+    <Content Include="Views\ActiveMonsters\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

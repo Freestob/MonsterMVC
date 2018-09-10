@@ -2382,6 +2382,15 @@ namespace MonsterMVC.Data
                 HealthPoints = 10,
                 IsAlive = true
             });
+            context.ActiveMonsters.Add(new ActiveMonster()
+            {
+                Id = 2,
+                EncounterId = 1,
+                MonsterId = 2,
+                HealthPoints = 10,
+                IsAlive = true
+            });
+            context.SaveChanges();
 
             base.Seed(context);
         }
