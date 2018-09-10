@@ -2112,6 +2112,76 @@ namespace MonsterMVC.Data
                 ChallengeRating = 8,
                 UrlId = 289
             });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 290,
+                Name = "Unicorn",
+                ChallengeRating = 5,
+                UrlId = 290
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 291,
+                Name = "Vampire",
+                ChallengeRating = 13,
+                UrlId = 291
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 292,
+                Name = "Vampire Spawn",
+                ChallengeRating = 5,
+                UrlId = 292
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 293,
+                Name = "Veteran",
+                ChallengeRating = 3,
+                UrlId = 293
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 294,
+                Name = "Violet Fungus",
+                ChallengeRating = 0.25f,
+                UrlId = 294
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 295,
+                Name = "Vrock",
+                ChallengeRating = 6,
+                UrlId = 295
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 296,
+                Name = "Vulture",
+                ChallengeRating = 0,
+                UrlId = 296
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 297,
+                Name = "Warhorse",
+                ChallengeRating = 0.5f,
+                UrlId = 297
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 298,
+                Name = "Warhorse Skeleton",
+                ChallengeRating = 0.5f,
+                UrlId = 298
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 299,
+                Name = "Water Elemental",
+                ChallengeRating = 5,
+                UrlId = 299
+            });
             context.SaveChanges();
 
             base.Seed(context);
