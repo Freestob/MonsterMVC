@@ -2182,6 +2182,76 @@ namespace MonsterMVC.Data
                 ChallengeRating = 5,
                 UrlId = 299
             });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 300,
+                Name = "Weasel",
+                ChallengeRating = 0,
+                UrlId = 300
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 301,
+                Name = "Werebear",
+                ChallengeRating = 5,
+                UrlId = 301
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 302,
+                Name = "Wereboar",
+                ChallengeRating = 4,
+                UrlId = 302
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 303,
+                Name = "Wererat",
+                ChallengeRating = 2,
+                UrlId = 303
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 304,
+                Name = "Weretiger",
+                ChallengeRating = 4,
+                UrlId = 304
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 305,
+                Name = "Werewolf",
+                ChallengeRating = 3,
+                UrlId = 305
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 306,
+                Name = "White Dragon Wyrmling",
+                ChallengeRating = 2,
+                UrlId = 306
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 307,
+                Name = "Wight",
+                ChallengeRating = 3,
+                UrlId = 307
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 308,
+                Name = "Will-o'-Wisp",
+                ChallengeRating = 2,
+                UrlId = 308
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 309,
+                Name = "Winter Wolf",
+                ChallengeRating = 3,
+                UrlId = 309
+            });
             context.SaveChanges();
 
             base.Seed(context);
