@@ -2322,6 +2322,49 @@ namespace MonsterMVC.Data
                 ChallengeRating = 7,
                 UrlId = 319
             });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 320,
+                Name = "Young Gold Dragon",
+                ChallengeRating = 10,
+                UrlId = 320
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 321,
+                Name = "Young Green Dragon",
+                ChallengeRating = 8,
+                UrlId = 321
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 322,
+                Name = "Young Red Dragon",
+                ChallengeRating = 10,
+                UrlId = 322
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 323,
+                Name = "Young Silver Dragon",
+                ChallengeRating = 9,
+                UrlId = 323
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 324,
+                Name = "Young White Dragon",
+                ChallengeRating = 6,
+                UrlId = 324
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 325,
+                Name = "Zombie",
+                ChallengeRating = 0.25f,
+                UrlId = 325
+            });
+            context.Monsters.Add(new MonsterDataModel()
             context.SaveChanges();
 
             base.Seed(context);
