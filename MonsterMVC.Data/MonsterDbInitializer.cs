@@ -2364,7 +2364,6 @@ namespace MonsterMVC.Data
                 ChallengeRating = 0.25f,
                 UrlId = 325
             });
-            context.Monsters.Add(new MonsterDataModel()
             context.SaveChanges();
 
             base.Seed(context);
