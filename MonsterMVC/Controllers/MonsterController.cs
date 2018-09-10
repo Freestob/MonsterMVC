@@ -18,11 +18,13 @@ namespace MonsterMVC.Controllers
         {
             return View();
         }
-        public async Task<ActionResult> GetMonster(int id)
+        [HttpPost]
+        public async Task<ActionResult> GetMonster(int monsterId)
         {
-            var monster = await _monsterClient.GetMonster(id);
+            var monster = await _monsterClient.GetMonster(monsterId);
 
             return View(monster);
         }
+        
     }
 }
