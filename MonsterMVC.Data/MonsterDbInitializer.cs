@@ -1132,8 +1132,148 @@ namespace MonsterMVC.Data
                 ChallengeRating = 0,
                 UrlId = 149
             });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 150,
+                Name = "Goblin",
+                ChallengeRating = 0.25f,
+                UrlId = 150
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 151,
+                Name = "Gold Dragon Wyrmling",
+                ChallengeRating = 3,
+                UrlId = 151
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 152,
+                Name = "Gorgon",
+                ChallengeRating = 5,
+                UrlId = 152
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 153,
+                Name = "Gray Ooze",
+                ChallengeRating = 0.5f,
+                UrlId = 153
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 154,
+                Name = "Green Dragon Wyrmling",
+                ChallengeRating = 2,
+                UrlId = 154
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 155,
+                Name = "Green Hag",
+                ChallengeRating = 3,
+                UrlId = 155
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 156,
+                Name = "Grick",
+                ChallengeRating = 2,
+                UrlId = 156
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 157,
+                Name = "Griffon",
+                ChallengeRating = 2,
+                UrlId = 157
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 158,
+                Name = "Grimlock",
+                ChallengeRating = 0.25f,
+                UrlId = 158
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 159,
+                Name = "Guard",
+                ChallengeRating = 0.125f,
+                UrlId = 159
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 160,
+                Name = "Guardian Naga",
+                ChallengeRating = 10,
+                UrlId = 160
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 161,
+                Name = "Gynosphinx",
+                ChallengeRating = 11,
+                UrlId = 161
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 162,
+                Name = "Half-Red Dragon Veteran",
+                ChallengeRating = 5,
+                UrlId = 162
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 163,
+                Name = "Harpy",
+                ChallengeRating = 1,
+                UrlId = 163
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 164,
+                Name = "Hawk",
+                ChallengeRating = 0,
+                UrlId = 164
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 165,
+                Name = "Hell Hound",
+                ChallengeRating = 3,
+                UrlId = 165
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 166,
+                Name = "Hezrou",
+                ChallengeRating = 8,
+                UrlId = 166
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 167,
+                Name = "Hill Giant",
+                ChallengeRating = 5,
+                UrlId = 167
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 168,
+                Name = "Hippogriff",
+                ChallengeRating = 1,
+                UrlId = 168
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 169,
+                Name = "Hobgoblin",
+                ChallengeRating = 0.5f,
+                UrlId = 169
+            });
             context.SaveChanges();
-
+       
             base.Seed(context);
         }
 
