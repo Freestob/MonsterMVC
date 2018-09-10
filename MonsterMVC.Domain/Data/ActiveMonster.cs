@@ -12,7 +12,7 @@ namespace MonsterMVC.Domain.Data
         public int EncounterId { get; set; }
         public int MonsterId { get; set; }
         public int HealthPoints { get; set; }
-        public bool Alive { get; set; }
+        public bool IsAlive { get; set; }
 
         public virtual Encounter Encounter { get; set; }
         public virtual MonsterDataModel Monster { get; set; }

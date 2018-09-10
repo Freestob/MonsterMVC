@@ -42,7 +42,7 @@ namespace MonsterMVC.Data
                 EncounterId = 1,
                 MonsterId = 1,
                 HealthPoints = 10,
-                Alive = true
+                IsAlive = true
             });
 
             base.Seed(context);
