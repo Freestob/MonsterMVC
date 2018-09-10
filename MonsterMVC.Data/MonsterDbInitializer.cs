@@ -1902,6 +1902,76 @@ namespace MonsterMVC.Data
                 ChallengeRating = 0.25f,
                 UrlId = 249
             });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 260,
+                Name = "Solar",
+                ChallengeRating = 21,
+                UrlId = 260
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 261,
+                Name = "Specter",
+                ChallengeRating = 1,
+                UrlId = 261
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 262,
+                Name = "Spider",
+                ChallengeRating = 0,
+                UrlId = 262
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 263,
+                Name = "Spirit Naga",
+                ChallengeRating = 8,
+                UrlId = 263
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 264,
+                Name = "Sprite",
+                ChallengeRating = 0.25f,
+                UrlId = 264
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 265,
+                Name = "Spy",
+                ChallengeRating = 1,
+                UrlId = 265
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 266,
+                Name = "Steam Mephit",
+                ChallengeRating = 0.25f,
+                UrlId = 266
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 267,
+                Name = "Stirge",
+                ChallengeRating = 0.125f,
+                UrlId = 267
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 268,
+                Name = "Stone Giant",
+                ChallengeRating = 7,
+                UrlId = 268
+            });
+            context.Monsters.Add(new MonsterDataModel()
+            {
+                Id = 269,
+                Name = "Stone Golem",
+                ChallengeRating = 10,
+                UrlId = 269
+            });
             context.SaveChanges();
 
             base.Seed(context);
