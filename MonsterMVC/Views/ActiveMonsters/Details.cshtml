@@ -1,0 +1,50 @@
+﻿@model MonsterMVC.Domain.Data.ActiveMonster
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ActiveMonster</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Encounter.Id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Encounter.Id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Monster.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Monster.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HealthPoints)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HealthPoints)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsAlive)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsAlive)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
