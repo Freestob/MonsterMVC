@@ -28,6 +28,23 @@ namespace MonsterMVC.Data
             });
             context.SaveChanges();
 
+
+            context.Encounters.Add(new Encounter()
+            {
+                Id = 1,
+
+            });
+            context.SaveChanges();
+
+            context.ActiveMonsters.Add(new ActiveMonster()
+            {
+                Id = 1,
+                EncounterId = 1,
+                MonsterId = 1,
+                HealthPoints = 10,
+                Alive = true
+            });
+
             base.Seed(context);
         }
 

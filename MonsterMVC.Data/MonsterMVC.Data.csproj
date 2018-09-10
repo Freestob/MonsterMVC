@@ -48,6 +48,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Maps\ActiveMonsterMap.cs" />
+    <Compile Include="Maps\EncounterMap.cs" />
     <Compile Include="Maps\MonsterMap.cs" />
     <Compile Include="MonsterDbContext.cs" />
     <Compile Include="MonsterDbInitializer.cs" />
