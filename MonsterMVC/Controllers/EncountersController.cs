@@ -58,10 +58,10 @@ namespace MonsterMVC.Controllers
             {
                 db.Encounters.Add(encounter);
                 db.SaveChanges();
-                return RedirectToAction("Encounter", "Home", encounter);
+                return RedirectToAction("Details", new {id = encounter.Id});
             }
 
-            return RedirectToAction("Encounter", "Home", encounter);
+            return RedirectToAction("Details", new {id = encounter.Id});
         }
 
         // GET: Encounters/Edit/5
