@@ -6,6 +6,6 @@ namespace MonsterMVC.Domain.Data
     public class Encounter
     {
         public int Id { get; set; }
-        public ICollection<ActiveMonster> ActiveMonsters { get; set; }
+        public virtual ICollection<ActiveMonster> ActiveMonsters { get; set; }
     }
 }

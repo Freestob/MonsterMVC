@@ -12,6 +12,16 @@
     <dl class="dl-horizontal">
     </dl>
 </div>
+<table>
+    @foreach (var item in Model.ActiveMonsters)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Monster.Name)
+            </td>
+        </tr>
+    }
+</table>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
     @Html.ActionLink("Back to List", "Index")

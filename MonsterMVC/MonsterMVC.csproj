@@ -293,7 +293,6 @@
     <Content Include="Views\ActiveMonsters\Details.cshtml" />
     <Content Include="Views\ActiveMonsters\Edit.cshtml" />
     <Content Include="Views\ActiveMonsters\Index.cshtml" />
-    <Content Include="Views\Home\Encounter.cshtml" />
     <Content Include="Views\Encounters\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>

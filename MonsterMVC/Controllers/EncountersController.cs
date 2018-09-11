@@ -28,12 +28,17 @@ namespace MonsterMVC.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Encounter encounter = db.Encounters.Find(id);
+
+            var encounter = db.Encounters
+                .Include(x => x.ActiveMonsters)
+                .FirstOrDefault(x => x.Id == id);
+            //var encounter = db.Encounters.Find(id);
             if (encounter == null)
             {
                 return HttpNotFound();
             }
-            return RedirectToAction("Encounter", "Home", encounter);
+
+            return View(encounter);
         }
 
         // GET: Encounters/Create
