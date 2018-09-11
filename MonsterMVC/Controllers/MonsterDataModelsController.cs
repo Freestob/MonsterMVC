@@ -33,13 +33,12 @@ namespace MonsterMVC.Controllers
         [HttpPost]
         public ActionResult GetMonsterName(string monsterName)
         {
-            if (monsterName == monsterDataModel.Name)
-            {
-                 var id = monsterDataModel.Id;
-                return RedirectToAction("GetMonster", "MonsterDataModelController", (monsterName));
-            }
 
-            return View();
+
+
+               var id = monsterDataModel.Id;
+                return RedirectToAction("GetMonster", "MonsterDataModelController", (id));
+
 
 
         }
