@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MonsterMVC.Domain.Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -25,6 +26,11 @@ namespace MonsterMVC.Controllers
             ViewBag.Message = "Your contact page.";
 
             return View();
+        }
+
+        public ActionResult Encounter(Encounter encounter)
+        {
+            return View(encounter);
         }
     }
 }

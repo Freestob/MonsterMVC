@@ -284,7 +284,6 @@
     <Content Include="Views\MonsterDataModels\Details.cshtml" />
     <Content Include="Views\MonsterDataModels\Edit.cshtml" />
     <Content Include="Views\MonsterDataModels\Index.cshtml" />
-    <Content Include="Views\Encounters\Create.cshtml" />
     <Content Include="Views\Encounters\Delete.cshtml" />
     <Content Include="Views\Encounters\Details.cshtml" />
     <Content Include="Views\Encounters\Edit.cshtml" />
@@ -294,6 +293,8 @@
     <Content Include="Views\ActiveMonsters\Details.cshtml" />
     <Content Include="Views\ActiveMonsters\Edit.cshtml" />
     <Content Include="Views\ActiveMonsters\Index.cshtml" />
+    <Content Include="Views\Home\Encounter.cshtml" />
+    <Content Include="Views\Encounters\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -1,18 +1,11 @@
 ﻿@model MonsterMVC.Domain.Data.Encounter
 
-@{
-    ViewBag.Title = "Create";
-}
 
-<h2>Create</h2>
-
-
-@using (Html.BeginForm()) 
+@using (Html.BeginForm("Create", "Encounters", FormMethod.Post)) 
 {
     @Html.AntiForgeryToken()
     
     <div class="form-horizontal">
-        <h4>Encounter</h4>
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <div class="form-group">
@@ -21,12 +14,4 @@
             </div>
         </div>
     </div>
-}
-
-<div>
-    @Html.ActionLink("Back to List", "Index")
-</div>
-
-@section Scripts {
-    @Scripts.Render("~/bundles/jqueryval")
 }
