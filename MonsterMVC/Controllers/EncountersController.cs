@@ -33,7 +33,7 @@ namespace MonsterMVC.Controllers
             {
                 return HttpNotFound();
             }
-            return View(encounter);
+            return RedirectToAction("Encounter", "Home", encounter);
         }
 
         // GET: Encounters/Create
@@ -53,10 +53,10 @@ namespace MonsterMVC.Controllers
             {
                 db.Encounters.Add(encounter);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Encounter", "Home", encounter);
             }
 
-            return View(encounter);
+            return RedirectToAction("Encounter", "Home", encounter);
         }
 
         // GET: Encounters/Edit/5
