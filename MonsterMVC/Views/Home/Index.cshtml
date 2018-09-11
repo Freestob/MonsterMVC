@@ -31,8 +31,22 @@
         }
     </div>
     <div class="col-md-6">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+        <h2>Retrieve Existing Encounter</h2>
+        @using (Html.BeginForm("Details", "Encounters", FormMethod.Get)) 
+        {
+            @Html.AntiForgeryToken()
+    
+            <div class="form-horizontal">
+                <hr/>
+                <input type="number" name="Id" value="Id"/>
+
+                @Html.ValidationSummary(true, "", new {@class = "text-danger"})
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Resume Encounter" class="btn btn-default"/>
+                    </div>
+                </div>
+            </div>
+        }
     </div>
 </div>

@@ -33,7 +33,7 @@ namespace MonsterMVC.Controllers
             {
                 return HttpNotFound();
             }
-            return View(encounter);
+            return RedirectToAction("Encounter", "Home", encounter);
         }
 
         // GET: Encounters/Create
