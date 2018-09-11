@@ -26,15 +26,5 @@ namespace MonsterMVC.Controllers
             return View(monster);
         }
 
-//
-//        [HttpPost]
-//        public async Task<ActionResult> GetMonsterName(string monsterName)
-//        {
-//
-////            MonsterDataModel.Name = monsterName;
-////            var monster = await MonsterDataModelsController.Name(monsterName);
-////
-////            return RedirectToAction(“GetMonster”, “Monster”, new { id = monsterDataModel.UrlId });
-//        }
     }
 }

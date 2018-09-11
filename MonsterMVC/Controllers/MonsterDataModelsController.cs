@@ -4,22 +4,53 @@ using System.Data;
 using System.Data.Entity;
 using System.Linq;
 using System.Net;
+using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
+using MonsterMVC.Clients;
 using MonsterMVC.Data;
 using MonsterMVC.Domain.Data;
+using MonsterMVC.Domain.Data.Abstract;
+using MonsterMVC.Domain.DomainModel;
 
 namespace MonsterMVC.Controllers
 {
     public class MonsterDataModelsController : Controller
     {
         private MonsterDbContext db = new MonsterDbContext();
+        private readonly MonsterClient _monsterClient = new MonsterClient();
+
+
+        private MonsterDataModel monsterDataModel = new MonsterDataModel();
+
+        public async Task<ActionResult> GetMonster(int id)
+        {
+            var monster = await _monsterClient.GetMonster(id);
+
+            return View(monster);
+        }
+
+        [HttpPost]
+        public ActionResult GetMonsterName(string monsterName)
+        {
+            if (monsterName == monsterDataModel.Name)
+            {
+                 var id = monsterDataModel.Id;
+                return RedirectToAction("GetMonster", "MonsterDataModelController", (monsterName));
+            }
+
+            return View();
+
+
+        }
 
         // GET: MonsterDataModels
         public ActionResult Index()
         {
             return View(db.Monsters.ToList());
         }
+
+      
 
         // GET: MonsterDataModels/Details/5
         public ActionResult Details(int? id)
@@ -36,6 +67,7 @@ namespace MonsterMVC.Controllers
 
             return RedirectToAction("GetMonster", "Monster", new{id = monsterDataModel.UrlId});
         }
+
 
         // GET: MonsterDataModels/Create
         public ActionResult Create()
